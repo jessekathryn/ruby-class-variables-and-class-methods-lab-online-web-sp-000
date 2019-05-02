@@ -31,11 +31,15 @@ def self.genre_count
   @@genres.collect do |genre, i|
     if !genre.include?(genre)
       genre.count
-      genre{#name: 
+      "@genre #{name, i}"
   end
  end
  end
  end
+ 
+   def inspect
+    "#<Fruit: #{name}>"
+  end
 
  if i[1] < value
         value = i[1]
