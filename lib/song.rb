@@ -20,8 +20,8 @@ def self.count
  end 
 
 def self.artists
- @@artists.uniq
- end
+ @@artists
+ end.uniq
 
 def genres(genre)
  @@genres.uniq
