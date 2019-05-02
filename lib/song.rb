@@ -30,7 +30,7 @@ def self.genres
 def self.genre_count
  final_genre_count = {}
   @@genres.collect do |genre|
-    if !genre.include?(genre)
+    if !@genres.include?(genre)
       final_genre_count[genre] = 1
     else
       final_genre_count[genre] += 1
