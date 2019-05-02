@@ -38,5 +38,17 @@ def self.genre_count
   end
  final_genre_count
  end
+
+def self.artist_count
+ final_genre_count = {}
+  @@genres.collect do |genre|
+    if !final_genre_count[genre] 
+      final_genre_count[genre] = 1
+    else
+      final_genre_count[genre] += 1
+   end
+  end
+ final_genre_count
+ end
 end 
  
