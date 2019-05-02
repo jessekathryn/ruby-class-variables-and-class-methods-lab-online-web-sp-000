@@ -32,4 +32,4 @@ def self.genre_count
     if !@@genres.include(genre)
       @@genres.count
   end
- end
+end
