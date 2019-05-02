@@ -30,7 +30,7 @@ def self.genres
 def self.genre_count
   @@genres.each_with_index do |genre, index|
     if !@@genres.include?(genre)
-      @@genres.count{@genres}
+      @@genres.count
   end
  end
  end
