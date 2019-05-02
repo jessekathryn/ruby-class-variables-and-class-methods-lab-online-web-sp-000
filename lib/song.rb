@@ -28,9 +28,9 @@ def self.genres
   end
   
 def self.genre_count
-  @@genres.each do |genre|
+  @@genres.each_with_index do |genre, index|
     if !@@genres.include?(genre)
-      @@genres.count
+      @@genres.count{@genres}
   end
  end
  end
