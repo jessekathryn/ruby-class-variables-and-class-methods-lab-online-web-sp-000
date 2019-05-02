@@ -24,8 +24,7 @@ def self.artists
  end
 
 def genres(genre)
-if !@@genres.include?(genre) 
-   @@genres << genre
+ @@genres.uniq
   end
 end
 end
