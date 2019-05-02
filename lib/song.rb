@@ -22,7 +22,6 @@ def self.count
 def self.artists
   @@artists 
  end
- end
 
 def genres(genre)
 if !@@genres.include?(genre) 
