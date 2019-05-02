@@ -28,5 +28,8 @@ def self.genres
   end
   
 def self.genre_count
-  
+  @@genres.each do |genre|
+    if !@@genres.include(genre)
+      @@genres << genre
+ end
 end
