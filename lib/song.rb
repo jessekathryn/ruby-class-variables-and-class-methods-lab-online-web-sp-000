@@ -16,7 +16,7 @@ def initialize(name, artist, genre)
   end
 
 def self.count
-  @@count
+ @@count
  end 
 
 def self.artists
