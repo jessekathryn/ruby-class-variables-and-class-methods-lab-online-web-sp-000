@@ -31,5 +31,6 @@ def self.genre_count
   @@genres.each do |genre|
     if !@@genres.include(genre)
       @@genres.count
+  end
  end
 end
