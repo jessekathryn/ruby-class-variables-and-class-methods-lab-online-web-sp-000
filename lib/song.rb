@@ -28,10 +28,18 @@ def self.genres
   end
   
 def self.genre_count
-  @@genres.map do |genre, index|
-    if !@@genres.include?(genre)
-      @@genres.count
+  @@genres.collect do |genre, i|
+    if !genre.include?(genre)
+      genre.count
+      #{
   end
  end
  end
  end
+
+ if i[1] < value
+        value = i[1]
+        key = i[0]
+      end
+   end
+  return key
