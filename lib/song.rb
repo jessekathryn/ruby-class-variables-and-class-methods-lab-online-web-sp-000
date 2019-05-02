@@ -29,7 +29,7 @@ def self.genres
   
 def self.genre_count
   @@genres.collect do |genre, count|
-    if @genres.uniq
+    if @genres.uniq(genre)
       count
     end
    end
